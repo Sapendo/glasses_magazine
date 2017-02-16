@@ -1,0 +1,419 @@
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapItem {
+    width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.upper {
+    text-transform: uppercase;
+}
+.header {
+    width: 100%;
+    justify-content: space-around;
+    background-color: #5EAFC8;
+    font: 13px "Open Sans", sans-serif;
+    padding: 10px 0;
+    color: #fff;
+}
+.header, .header>*, .list li {
+    display: inline-flex;
+    flex-wrap: wrap;   
+}
+.header select {
+    background-color: #5EAFC8;
+    border: none;
+    font: 13px "Open Sans", sans-serif;
+    color: #fff;
+    margin-right: 20px;
+}
+.listAccount li{
+    border-right: 1px solid #fff;
+    padding: 0 10px;
+}
+.listAccount li:last-child {
+    border: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; 
+}
+.menu .wrapItem>div, .menu a{
+    display: flex;
+    text-transform: uppercase;
+    font: bold 14px "Open Sans", sans-serif;
+    color: #656565;
+    align-items: center;
+}
+.menu .wrapItem>div:first-child {
+    font-size: 36px;
+}
+.menu .navigation {
+    width: 346px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu .right {
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu .search {
+    height: 27px;
+    width: 172px;
+    border: 1px solid #C5C5C5;    
+    display: flex;
+    align-items: center;
+}
+input[type="search"] {
+    width: 147px;
+    border: none;
+    margin-left: 3px;
+    font: 13px "Open Sans", sans-serif;
+}
+.search button {
+    background: transparent;
+    border: none;
+    color: #656565;
+    font-size: 15px;
+    cursor: pointer;
+    width: 23px;
+}
+.menu .icon {
+    height: 35px;
+    width: 35px;
+    background-color: #7CB624;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.mainPicture, .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mainPicture .text {
+    position: absolute;
+    left: 24%;
+}
+.mainPicture .text .first {
+    color: #DFDEDD;
+    font: 300 30px "Open Sans", sans-serif;
+    width: 285px;
+    height: 47px;
+}
+.mainPicture .text .second {
+    color: #fff;
+    font: bold 28px "Open Sans", sans-serif;
+    width: 329px;
+    height: 47px;
+}
+.mainPicture .text .first, .mainPicture .text .second {
+    background-color: RGBA(0, 0, 0,0.5);
+    margin: 5px;
+    padding: 5px 0 0 20px;
+}
+.slides {
+    width: 100%;
+    background-image: url(../images/mainPhoto.png);
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slides .arrow{
+    width: 1158px;
+    display: flex;
+    justify-content: space-between;
+}
+.slides .arrow>button{
+    width: 67px;
+    height: 67px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 55px;
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .content .wrapItem {
+    flex-wrap: nowrap;    
+}
+.content {
+    padding: 45px 0 70px 0;
+}
+.product h2 {
+    width: 100%;
+    color: #635f57;
+    font: 24px "Open Sans", sans-serif;
+    margin-bottom: 20px;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapItem .product .card {
+    flex: 1 217px;
+    height: 302px;
+    border: 8px solid #fff;
+    margin: 0 22px 22px 0;
+    box-shadow: 0 0 5px 1px rgba(233,233,233,1); 
+    
+}
+.product .images {
+    background-color: #EFF1EF;
+    width: 217px;
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.wrapItem .product .card .info {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapItem .product .card .info .fa {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7CB624;
+    border-radius: 50%;
+    color: #fff;
+    margin-top: 10px;
+}
+.wrapItem .product .card .info .name {
+    color: #464148;
+    font: 14px "Open Sans", sans-serif;
+    margin: 15px 0 1px 0;
+}
+.wrapItem .product .card .info .price {
+    color: #7db122;
+    font: 18px "Open Sans", sans-serif;
+}
+
+aside .choose, aside .singUp {
+    width: 233px;
+    border-top: 4px solid #5BA9C1;
+    padding: 8px;
+    box-shadow: 0 0 5px 1px rgba(233,233,233,1);
+    position: relative;
+    margin-bottom: 15px;
+}
+aside .choose button {
+    position: absolute;
+    bottom: 30px;
+    left: 22%;
+    background-color: #5EAFC8;
+    color: #fff;
+    padding: 17px 26px;
+    border: none;
+    font: 14px "Open Sans", sans-serif;
+}
+aside .choose .upper, aside .singUp .upper {
+    color: #635f57;
+    font: 24px "Open Sans", sans-serif;
+    width: 125px;
+    text-align: center;
+    margin: 17px auto;
+}
+aside .singUp .upper {
+    width: 170px;
+}
+aside .singUp .text {
+    color: #696969;
+    font: 14px "Open Sans", sans-serif;
+    width: 190px;
+    text-align: center;
+    margin: 0 auto;
+}
+aside .singUp .line {
+    width: 85px;
+    border-top: 1px solid #EDEDED;
+    margin: 15px auto;
+    
+}
+aside form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 91px;
+    margin-bottom: 25px;
+}
+aside form buttom {
+    background-color: #7DB625;
+    color: #fff;
+    padding: 13px 24px;
+    border: none;
+    font: 14px "Open Sans", sans-serif;
+}
+
+aside .input {
+    border: 1px solid #E1E1E1;
+    width: 185px;
+    height: 29px;
+    display: flex;
+    
+}
+aside .input input {
+    border: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+.footer_1 {
+    background-color: #5EAFC8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font: 21px "Open Sans", sans-serif;
+    color: #fff;
+    padding: 15px 0 20px;
+}
+.footer_1 .wrapItem>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5px;
+}
+.footer_1 .icon {
+    width: 65px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4E9EB7;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.footer_2 {
+    width:100%;
+    background-color: #4E9EB7;
+    display: flex;
+    justify-content: center;
+    font: 13px "Open Sans", sans-serif;
+    color: #DEEAEC;
+    padding: 40px 0;
+}
+.footer_2 .upper {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.menu .wrapItem, .footer_1 .wrapItem, .footer_2 .wrapItem, .footer_3 .wrapItem {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footer_2 .wrapItem>div {
+    width: 245px;    
+    margin: 5px 0 5px 10px;
+}
+.photoMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 126px;
+    border-bottom: 1px solid #5EAFC8;
+    border-top: 1px solid #5EAFC8;
+    margin: 3px 0 5px;
+}
+
+.twit .first, .twit .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.twit .fa, .contact .fa {
+    font-size: 22px;
+    color: #4E9EB7;
+}
+
+.twit .text {
+    flex-basis: 75%;
+}
+
+.twit .icon {
+    flex-basis: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapItem .info a p, .contact p{
+    margin-bottom: 5px;
+    color: #DEEAEC;
+}
+
+.contact .icon {
+    margin-top: 15px;
+    padding-top: 15px;
+    display: flex;
+    border-top: 1px solid #5DAFC7;
+}
+
+.contact .icon>div{
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer_3 {
+    display: flex;
+    background-color: #204C5A;
+    height: 60px;
+    width: 100%;
+    color: #71B3C4;    
+    font: 13px "Open Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+.footer_3 .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_3 .right>div {
+    padding: 0 10px;
+    border-left: 1px solid #4E9EB7;
+}
+.footer_3 .right>div:first-child {
+    border: none;
+}
